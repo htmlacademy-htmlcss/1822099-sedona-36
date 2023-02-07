@@ -206,11 +206,11 @@ img {
   text-decoration: none;
   background: #756157;
   border-radius: 4px;
- }
+}
 
- /*Блок подписки на рассылку */
+/*Блок подписки на рассылку */
 
- .subscribe {
+.subscribe {
   color: #FFFFFF;
   background-color: #ffffff;
   background: url(../images/subscribe.png) no-repeat;
@@ -218,10 +218,10 @@ img {
 
 .subscribe-title {
   font-weight: 700;
-font-size: 30px;
-line-height: 36px;
-text-transform: uppercase;
-text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .subscribe-text {
@@ -268,3 +268,145 @@ text-align: center;
 }
 
 /* Каталог */
+
+.inner-header {
+  background: url(../images/bg-catalog.jpg);
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.catalog-filter-list {
+  list-style: none;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.control-button-submit {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #82B3D3;
+  border-radius: 4px;
+  border: none
+}
+
+.control-button-reset {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+/* Каталог гостиниц */
+
+.search-result {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.select-control {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.product-card {
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+}
+
+.button-detail {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #756157;
+  border-radius: 4px;
+}
+
+.button-favorites {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0);
+  background-color: #82B3D3;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.product-card-price {
+  text-align: right;
+}
+
+.product-card-raiting {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+}
+
+/* Пагинация */
+
+.pagination-item {
+  list-style: none;
+}
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #82B3D3;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.pagination-link-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.pagination-dot {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.subscribe-inner {
+  color: #000000;
+  background-image: none;
+}
