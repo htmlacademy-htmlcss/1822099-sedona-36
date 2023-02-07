@@ -1,3 +1,270 @@
-body {
-    background-color: tomato;
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Общие стили */
+
+body {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Стили header */
+
+.navigation-list {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  list-style: none;
+}
+
+.navigation-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.favorite-number {
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #7DB54F;
+  border-radius: 50%;
+}
+
+.navigation-link-current {
+  border-bottom: 2px solid #756257;
+}
+
+.header-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #756157;
+  border-radius: 4px;
+}
+
+/* Стили main */
+
+.hero {
+  background-color: #FFFFFF;
+  background: url(../images/index-background.jpg) no-repeat,
+    url(../images/hero-vector.svg) no-repeat;
+}
+
+/* Стили для Блока Причины */
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantages-text {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantages-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.description-text {
+  text-align: center;
+}
+
+.bg-city {
+  background: #82B3D3;
+}
+
+.w-text {
+  color: #FFFFFF;
+}
+
+.bg-square {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.bg-road {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+/* Блок Сервис */
+
+.services-header-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.services-header-text {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-item {
+  text-align: center;
+}
+
+.services-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.services-text {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+
+.bg-food {
+  background: #FFFFFF;
+}
+
+/* Блок Поиска */
+
+.search-heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.search-text {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.button-search {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  background: #756157;
+  border-radius: 4px;
+ }
+
+ /*Блок подписки на рассылку */
+
+ .subscribe {
+  color: #FFFFFF;
+  background-color: #ffffff;
+  background: url(../images/subscribe.png) no-repeat;
+}
+
+.subscribe-title {
+  font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+text-align: center;
+}
+
+.subscribe-text {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.field {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.subscribe-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Подвал */
+
+.footer-social-list {
+  list-style: none;
+}
+
+.footer-social-item .button {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-telephone {
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Каталог */
