@@ -287,6 +287,20 @@ img {
   line-height: 78px;
 }
 
+.breadcrumbs {
+list-style: none;
+}
+
+.breadcrumbs-link {
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+color: #FFFFFF;
+text-decoration: none;
+}
+
 .catalog-filter-list {
   list-style: none;
 }
@@ -321,6 +335,17 @@ img {
   color: #FFFFFF;
   border: none;
   background-color: rgba(0, 0, 0, 0);
+}
+
+.subscribe-text-catalog {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+
 }
 
 
@@ -433,4 +458,9 @@ img {
 .subscribe-inner {
   color: #000000;
   background-image: none;
+}
+
+.visually-hidden {
+visibility: hidden;
+text-decoration: none;
 }
