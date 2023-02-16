@@ -42,7 +42,8 @@
       <a class="header-button" href="#">Хочу сюда</a>
     </header>
 
-    <main class="main-inner">
+    <main class="main-container">
+      <div class="page-container">
       <section class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ol class="breadcrumbs">
@@ -119,32 +120,44 @@
               до
             </label>
             <label>
-            <input class="control-range-input" type="range" name="price-range" min="0" max="9000" value="7500">
+              <input class="control-range-input" type="range" name="price-range" min="0" max="9000" value="7500">
             </label>
           </fieldset>
-
-          <button class="control-button-submit" type="submit">Применить</button>
-          <button class="control-button-reset" type="reset">Сбросить</button>
+          <div class="catalog-filter-control">
+            <button class="control-button-submit" type="submit">Применить</button>
+            <button class="control-button-reset" type="reset">Сбросить</button>
+          </div>
         </form>
       </section>
 
-      <section class="catalog" data-test="catalog">
-        <span class="search-result">Найдено гостиниц: 38</span>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешёвое</option>
-          <option value="popular">Сначала популярное</option>
-          <option value="expensive">Сначала дорогое</option>
-        </select>
+      <section class="catalog">
+        <h2 class="visually-hidden">Каталог гостиниц</h2>
+        <div class="catalog-header">
+          <span class="search-result">Найдено гостиниц: 38</span>
+          <select class="select-control" id="sorting" name="sorting">
+            <option class="sorting" value="cheap" selected>Сначала дешёвое</option>
+            <option class="sorting" value="popular">Сначала популярное</option>
+            <option class="sorting" value="expensive">Сначала дорогое</option>
+          </select>
 
-        <a href="#" class="button button-light">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a href="#" class="button button-light">
-          <span class="visually-hidden">Показать столбец</span>
-        </a>
-        <a href="#" class="button button-light">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+          <ol class="sorting-card-list">
+            <li class="sorting-card-item">
+              <button class="sorting-card-button" type="button">
+                <span class="visually-hidden">Сортировка значками</span>
+              </button>
+            </li>
+            <li class="sorting-card-item">
+              <button class="sorting-card-button" type="button">
+                <span class="visually-hidden">Сортировка плиткой</span>
+              </button>
+            </li>
+            <li class="sorting-card-item">
+              <button class="sorting-card-button" type="button">
+                <span class="visually-hidden">Сортировка списком</span>
+              </button>
+            </li>
+          </ol>
+        </div>
 
         <ul class="product-list">
           <li class="product-card">
@@ -201,40 +214,46 @@
           </li>
         </ul>
 
-        <ol class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-link-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-dot" href="#">...</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
-          </li>
-        </ol>
+        <div class="pagination-catalog">
+          <ol class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-link-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-dot" href="#">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ol>
+        </div>
       </section>
+
+
+
+
+
+      <section class="subscribe subscribe-inner">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-text-catalog">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="subscribe-email">Email</label>
+          <input class="field" type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail"
+            required>
+          <button class="button subscribe-button" type="submit">Подписаться</button>
+        </form>
+      </section>
+      </div>
     </main>
-
-
-
-    <section class="subscribe subscribe-inner">
-      <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-      <p class="subscribe-text-catalog">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-      <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="visually-hidden" for="subscribe-email">Email</label>
-        <input class="field" type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail" required>
-        <button class="button subscribe-button" type="submit">Подписаться</button>
-      </form>
-    </section>
 
     <footer class="page-footer">
       <section class="footer-contacts">
