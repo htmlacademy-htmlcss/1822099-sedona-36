@@ -109,7 +109,7 @@ img {
 /* Стили main */
 
 .hero {
-  height: 485px;
+  min-height: 485px;
   display: flex;
   justify-content: center;
   background-color: #D9EAF2;
@@ -166,6 +166,7 @@ img {
 
 .advantages-item {
   width: 400px;
+  height: 385px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -173,6 +174,7 @@ img {
 
 .wrapper-card {
   display: flex;
+  width: 400px;
   flex-direction: column;
   justify-content: center;
 }
@@ -249,6 +251,7 @@ img {
 
 .services-item {
   width: 400px;
+  min-height: 385px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -316,6 +319,8 @@ img {
 
 .subscribe {
   display: flex;
+  width: 1200px;
+  height: 414.86px;
   flex-direction: column;
   justify-content: center;
   color: #FFFFFF;
@@ -342,7 +347,6 @@ img {
 }
 
 .field {
-  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -351,7 +355,6 @@ img {
 }
 
 .subscribe-button {
-  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -422,7 +425,6 @@ img {
 }
 
 .breadcrumbs-link {
-  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -464,7 +466,6 @@ img {
 }
 
 .control-input {
-  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -531,7 +532,6 @@ img {
 }
 
 .select-control {
-  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -541,7 +541,6 @@ img {
 }
 
 .sorting {
-  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -572,7 +571,7 @@ img {
 
 .product-card {
   width: 340px;
-  height: 438px;
+  min-height: 438px;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -587,7 +586,6 @@ img {
 }
 
 .product-card-title {
-  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -605,10 +603,9 @@ img {
   text-transform: uppercase;
   background-color: #756157;
   border-radius: 4px;
-}
+  }
 
 .button-favorites {
-  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -638,7 +635,7 @@ img {
 
 /* Пагинация */
 
-.pagination{
+.pagination {
   display: flex;
   margin: 0;
   padding: 0;
@@ -677,7 +674,6 @@ img {
 }
 
 .subscribe-text-catalog {
-  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -687,6 +683,15 @@ img {
 
 }
 
-/* .visually-hidden {
-  visibility: hidden;
-} */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
