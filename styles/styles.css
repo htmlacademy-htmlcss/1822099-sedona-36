@@ -154,10 +154,12 @@ img {
   color: #333333;
 }
 
+/* Блок причин */
+
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -189,11 +191,16 @@ img {
 }
 
 .description-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
   text-align: center;
+  color: #333333;
 }
 
 .reverse-card {
-  flex-direction: row-reverse;
+  order: 1;
 }
 
 .bg-city {
@@ -406,7 +413,7 @@ img {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-  }
+}
 
 .footer-logo {
   margin-left: auto;
