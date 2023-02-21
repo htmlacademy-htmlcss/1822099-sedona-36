@@ -21,64 +21,70 @@ html {
 }
 
 body {
-  min-width: 1280px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  width: 1200px;
   min-height: 100%;
+  margin: 0 auto;
   font-family: "PT Sans", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   background-color: #FFFFFF;
 }
 
-img {
+/* img {
   max-width: 100%;
   height: auto;
-  object-fit: contain;
-}
+  } */
 
 /* Стили header */
 
 .page-header {
-  width: 1200px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
   padding: 0 70px;
-  box-sizing: border-box;
+  margin-bottom: -6px;
 }
 
 .logo {
-  z-index: 0;
+  height: 100%;
+  position: relative;
+  margin-right: 30px;
 }
 
 .navigation {
-  justify-content: flex-start;
+  display: flex;
+  margin: 0 auto;
 }
 
 .navigation-list {
-  max-width: 339px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  list-style: none;
+  width: 339px;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .navigation-user {
   max-width: 370px;
   margin-left: auto;
+
 }
 
 .navigation-link {
-  color: #000000;
+  display: block;
+  padding: 20px 16px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
   text-decoration: none;
+  color: #000000;
+  }
+
+.navigation-user .navigation-link {
+  min-width: 16px;
+  min-height: 22px;
 }
 
 .favorite-number {
@@ -104,9 +110,19 @@ img {
   text-transform: uppercase;
   background-color: #756157;
   border-radius: 4px;
+  align-self: center;
 }
 
 /* Стили main */
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
 
 .hero {
   min-height: 485px;
@@ -118,14 +134,6 @@ img {
   background-size: contain, auto;
 }
 
-.main-container {
-  flex-grow: 1;
-}
-
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
-}
 
 
 /* Стили для Блока Причины */
@@ -289,7 +297,9 @@ img {
 
 .search {
   display: flex;
+  height: 406px;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
