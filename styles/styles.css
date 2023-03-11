@@ -32,11 +32,10 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
 }
 
 .wrapper-body {
-  min-width: 1000px;
   min-height: 100%;
   margin: 0 auto;
   display: flex;
@@ -139,6 +138,10 @@ img {
   margin-right: 28px;
 }
 
+.logo-container:hover {
+  transform: scale(1.2);
+}
+
 .logo {
   position: relative;
   top: 0;
@@ -190,31 +193,47 @@ img {
   align-items: center;
 }
 
-.navigation-icon {
+.navigation-link-icon {
+  min-width: 44px;
+  display: block;
+  text-decoration: none;
+}
+
+.navigation-link-icon:hover {
+  background-color: #83B3D3;
+}
+
+.navigation-link-icon:focus {
+  background-color: #83B3D3;
+}
+
+.navigation-link-icon:active {
+  background-color: #3F5E72;
+
+}
+
+.search-icon {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  margin: auto;
+  background-image: url(../images/search.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
 }
 
-.navigation-icon:hover {
-  background-color: #83B3D3;
-}
-
-.navigation-icon:focus {
-  background-color: #83B3D3;
-}
-
-.navigation-icon:active {
-  background-color: #3F5E72;
-}
-
-.navigation-link-icon {
-  min-width: 44px;
-  display: block;
-  text-decoration: none;
+.favorite-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/heart.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18px 17px;
 }
 
 .navigation-link {
