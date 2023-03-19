@@ -470,6 +470,7 @@ img {
 .reverse-card .wrapper-card {
   order: 1;
 }
+
 .bg-city {
   width: 1200px;
   flex-direction: row;
@@ -560,8 +561,9 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin: 0;
-  margin-bottom: 30px;
+  padding: 102px 0 0;
+  position: relative;
+  margin: 0 auto 30px;
 }
 
 .services-text {
@@ -586,22 +588,25 @@ img {
 .house-icon {
   background-image: url("../images/house.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position-x: center;
+  background-position-y: 81px;
 }
 
 .burger-icon {
+  background-color: white;
   background-image: url("../images/burger.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position: top, center;
+  background-position-x: center;
+  background-position-y: 82px;
 }
 
 .surprise-icon {
   background-image: url("../images/surprise.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position: top, center;
+  background-position-x: center;
+  background-position-y: 79px;
 }
 
 /* Блок Поиска */
@@ -668,7 +673,8 @@ img {
   margin-bottom: 20px;
 }
 
-.subscribe-text-catalog, .subscribe-text {
+.subscribe-text-catalog,
+.subscribe-text {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -723,14 +729,15 @@ img {
 /* Подвал */
 
 .page-footer {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 40px 70px 30px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #FFFFFF;
-  box-sizing: border-box;
+  flex-wrap: wrap;
+  padding: 40px 70px 30px;
+  max-width: 1200px;
+}
+
+.footer-social {
+  min-width: 142px;
 }
 
 .footer-social-list {
@@ -739,7 +746,7 @@ img {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  align-content:center;
+  align-content: center;
   width: 142px;
 }
 
@@ -771,6 +778,7 @@ img {
 
 .social-icon {
   position: absolute;
+  content: "";
   top: 0;
   right: 0;
   bottom: 0;
@@ -779,7 +787,7 @@ img {
 }
 
 .footer-telephone {
-  display: inline-block;
+  display: flex;
   font-style: normal;
   font-size: 40px;
   line-height: 40px;
@@ -1004,15 +1012,9 @@ img {
 }
 
 .calendar-icon {
-  display: block;
-  width: 20px;
-  height: 20px;
-  background-image: url("../images/calendar.svg");
-  background-repeat: no-repeat;
   position: absolute;
   top: 16px;
-  right: 20px;
-  opacity: 0.3;
+  right: 22px;
 }
 
 .calendar-icon path {
@@ -1131,7 +1133,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .button-counter svg:hover {
-  fill:#000000;
+  fill: #000000;
 }
 
 .minus-counter {
@@ -1673,9 +1675,9 @@ input[type="number"]::-webkit-inner-spin-button {
 /* Каталог гостиниц */
 
 .catalog {
-  padding: 50px 70px 52px;
   display: flex;
   flex-direction: column;
+  padding: 50px 70px 52px;
   word-break: break-word;
 }
 
@@ -1686,13 +1688,14 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .search-result {
-  min-width: 350px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  align-self: center;
   color: #000000;
+  width: 338px;
+  margin-right: 200px;
+  align-self: center;
 }
 
 .sorting-container {
@@ -1738,13 +1741,16 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .sorting-card-list {
-  width: 160px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   padding: 0;
-  list-style-type: none;
+  margin: 0;
+  gap: 8px;
+  width: 160px;
+  min-height: 48px;
 }
 
 .sorting-card-item {
@@ -1791,11 +1797,8 @@ input[type="number"]::-webkit-inner-spin-button {
   outline: 0;
 }
 
-.sorting-card-button:active, .sorting-card-button.active {
-  border-color: #000000;
-}
-
 .list-icon {
+  border-color: #000000;
   background-image: url("../images/list-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1847,6 +1850,12 @@ input[type="number"]::-webkit-inner-spin-button {
   text-decoration: none;
 }
 
+.product-card-image {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
 .product-item-link {
   padding: 0;
   margin: 0;
@@ -1854,14 +1863,14 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .product-card-title {
-  max-width: 300px;
   display: inline-block;
+  max-width: 300px;
   margin: 0;
-  padding: 0;
-  padding-top: 16px;
+  padding: 17px 0 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  color: #000000;
 }
 
 .button-detail {
@@ -1909,18 +1918,46 @@ input[type="number"]::-webkit-inner-spin-button {
   text-align: right;
 }
 
-.stars {
-  display: inline-block;
-  width: 18px;
-  height: 17px;
-  background-image: url("../images/star.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  margin: 0;
-  margin-top: 10px;
-  margin-right: 1px;
-  box-sizing: border-box;
+.rating {
+  align-self: center;
+  height: 100%;
+  width: 100%;
 }
+
+.rating-stars {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  color: #000000;
+  font-weight: 400;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 4px;
+  margin: 0;
+  align-self: center;
+}
+
+.stars1 {
+  background: url("../images/star.svg") no-repeat 0 50%;
+}
+
+.stars2 {
+  background: url("../images/star.svg") no-repeat 0 50%, url("../images/star.svg") no-repeat 24px 50%;
+}
+
+.stars3 {
+  background: url("../images/star.svg") no-repeat 0 50%, url("../images/star.svg") no-repeat 24px 50%, url("../images/star.svg") no-repeat 48px 50%;
+}
+
+.stars4 {
+  background: url("../images/star.svg") no-repeat 0 50%, url("../images/star.svg") no-repeat 24px 50%, url("../images/star.svg") no-repeat 48px 50%, url("../images/star.svg") no-repeat 72px 50%;
+}
+
+.stars5 {
+  background: url("../images/star.svg") no-repeat 0 50%, url("../images/star.svg") no-repeat 24px 50%, url("../images/star.svg") no-repeat 48px 50%, url("../images/star.svg") no-repeat 72px 50%, url("../images/star.svg") no-repeat 96px 50%;
+}
+
 
 .product-card-raiting {
   min-height: 37px;
@@ -1931,8 +1968,8 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  text-transform: uppercase;
   color: #333333;
+  text-transform: uppercase;
   background-color: #F2F2F2;
   border-radius: 4px;
 }
