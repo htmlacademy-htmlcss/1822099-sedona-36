@@ -538,9 +538,7 @@ img {
 }
 
 .services-item {
-  min-width: 400px;
-  height: 385px;
-  max-height: 385px;
+  width: 400px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -1710,6 +1708,7 @@ input[type="number"]::-webkit-inner-spin-button {
   align-items: center;
   width: 292px;
   margin-right: auto;
+  align-self: start;
 }
 
 .select-control {
@@ -1751,6 +1750,7 @@ input[type="number"]::-webkit-inner-spin-button {
   gap: 8px;
   width: 160px;
   min-height: 48px;
+  align-self: start;
 }
 
 .sorting-card-item {
